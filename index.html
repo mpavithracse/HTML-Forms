@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Document</title>
+    <link rel="stylesheet"
+		type="text/css" href="style.css">
+</head>
+<body>
+    
+    <form autocomplete="off" onsubmit="event.preventDefault(); submitbutton()" >
+    <div class="left" id="leftside">
+        FirstName<br>
+        <input type="text" id = Firstname><br>
+        LastName<br>
+        <input type="text" id = Lastname><br>
+        Address<br>
+        <input type="text" id = Address><br>
+        Pincode<br>
+        <input type="text" id = Pincode><br>
+        Gender<br>
+        <input type="text" id = Gender><br>
+        Food<br>
+        <select name="Food" id="Foodlist">
+            <option value="Idli">Idli</option>
+            <option value="Dosa">Dosa</option>
+            <option value="Roti">Roti</option>
+            <option value="Rice">Rice</option>
+            <option value="FreshJuice">FreshJuice</option>
+        </select><br>
+        State<br>
+        <input type="text" id = State><br>
+        Country<br>
+        <input type="text" id = Country><br>
+        Country<br>
+        <div class="form-action-button">
+        <input type="submit" value="Submit" onsubmit="submitbutton()">
+        </div>
+    </div>
+    </form>
+    <div class="right">
+    <table id = "userdetails" >
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Address</th>
+    <th>Gender</th>
+    <th>Pincode</th>
+    <th>Food</th>
+    <th>State</th>
+    <th>Country</th>
+    <tbody>
+    </tbody>
+    </table>
+    </div> 
+    <script src="script.js">    
+    </script>
+</body>
+</html>
